@@ -20,11 +20,7 @@ function save(element, saveName) {
 
 }
 
-// time comparions function for past & present 
 
-
-
-// dateElement.textContent = today
 setInterval(timeUpdate, 1000);
 
 $(".saveBtn").click(function (event) {
@@ -37,12 +33,45 @@ $(".saveBtn").click(function (event) {
     console.log(hour);
     console.log(description);
     localStorage.setItem(hour, description);
-    
+
 });
 
-$("#9am .description").val(localStorage.getItem("9am"));
+$("#hour-9 .description").val(localStorage.getItem("hour-9"));
+$("#hour-10 .description").val(localStorage.getItem("hour-10"));
+$("#hour-11 .description").val(localStorage.getItem("hour-11"));
+$("#hour-12 .description").val(localStorage.getItem("hour-12"));
+$("#hour-13 .description").val(localStorage.getItem("hour-13"));
+$("#hour-14 .description").val(localStorage.getItem("hour-14"));
+$("#hour-15 .description").val(localStorage.getItem("hour-15"));
+$("#hour-16 .description").val(localStorage.getItem("hour-16"));
+$("#hour-17 .description").val(localStorage.getItem("hour-17"));
+
+function comparions(){
+    var current = moment().hours()
+    $(".time-block").each(function(){
+        var rowTime = parseInt($(this).attr("id").split('-')[1])
+        if (rowTime<current) {
+            $(this).addClass("past");
+        } 
+        else if (rowTime===current) {
+            $(this).addClass("present");
+            $(this).removeClass("past");
+        }
+        else {
+                $(this).addClass("future");
+                $(this).removeClass("past");
+                $(this).removeClass("present");
+        }
+
+    })
+
+}
+
+comparions();
 
 
-
+// time comparions function for past present & future 
 
 // $("#currentDay").text(today.format("MM Do, YYYY"));
+
+
