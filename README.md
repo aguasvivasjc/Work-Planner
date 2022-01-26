@@ -6,3 +6,11 @@ The deployed site will contain time blocks during normal business hours in which
 Upon clicking the save button, the event(s) will save to local storage and appear even if the page is refreshed the events filled within a timeblock remain. 
 
 In addition, the page will always show the live date in which is opened. 
+
+
+
+
+
+
+
+link to deployed site: https://aguasvivasjc.github.io/Work-Planner/
