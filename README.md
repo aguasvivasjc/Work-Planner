@@ -8,7 +8,7 @@ Upon clicking the save button, the event(s) will save to local storage and appea
 In addition, the page will always show the live date in which is opened. 
 
 
-https://user-images.githubusercontent.com/94660524/151218443-2de9e0c7-429e-4918-b313-80066ea5da7a.png"
+<img width="1440" alt="Screen Shot 2022-01-26 at 12 40 24 PM" src="https://user-images.githubusercontent.com/94660524/151218839-6390ed4f-4b24-4801-ad35-1a22f17cdc79.png">
 
 
 
